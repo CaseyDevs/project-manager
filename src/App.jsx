@@ -33,6 +33,7 @@ function App() {
         });
     }
 
+
     function handleAddProject(projectData) {
         setProjectState(prevState => {
             // New project object
@@ -51,11 +52,26 @@ function App() {
         });
     }
 
+    function handleDeleteProject() {
+        // Use prev state to keep track of old projects
+        setProjectState(prevState => {
+            return {
+                ...prevState,
+                selectedProjectID: undefined,  // Update project ID
+                // Remove the selected project from the projects list
+                projects: prevState.projects.filter(
+                    (project) => project.id !== prevState.selectedProjectID
+                ),
+            };
+        });
+    }
+
 
     // Find the id of the selected project
     const selectedProject = projectState.projects.find(project => project.id === projectState.selectedProjectID);
 
-    let content = <SelectedProject project={selectedProject} />;
+    // Set the selected projects as default if there is one
+    let content = <SelectedProject project={selectedProject} onDelete={handleDeleteProject}/>;
 
     // If project ID present, create New Project
     if (projectState.selectedProjectID === null) {

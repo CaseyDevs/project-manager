@@ -20,7 +20,9 @@ export default function Sidebar({ projectList, onHandleStartAddProject, onSelect
                     } else {
                         cssClasses += " text-stone-400"
                     }
+                    
 
+                    // Return a list of created projects in the sidebar
                     return (
                     <li key={project.id}>
                         <button 
