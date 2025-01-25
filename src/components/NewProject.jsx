@@ -51,9 +51,9 @@ export default function NewProject({ onAdd }) {
 
                 {/*  Custom input components */}
                 <div className="flex-col">
-                    <Input type="text" labelText="Title" ref={titleRef}/>
-                    <Input labelText="Description" textarea ref={desriptionRef}/>
-                    <Input type="date" labelText="Due Date" ref={dueDateRef}/>
+                    <Input type="text" labelText="Title" ref={titleRef} />
+                    <Input labelText="Description" textarea ref={desriptionRef} />
+                    <Input type="date" labelText="Due Date" ref={dueDateRef} />
                 </div>
             </div>
         </>

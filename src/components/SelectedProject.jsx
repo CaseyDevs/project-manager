@@ -1,3 +1,5 @@
+import Tasks from "./Tasks";
+
 export default function ViewProject({ project, onDelete }) {
     
     // Format date
@@ -17,7 +19,7 @@ export default function ViewProject({ project, onDelete }) {
                 <p className="mb-4 text-stone-400">{formattedDate}</p>
                 <p className="text-stone-600 whitespace-pre-wrap">{project.description}</p>
             </header>
-            TASKS
+            <Tasks />
         </div>
     )
 }
