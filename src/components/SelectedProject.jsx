@@ -1,14 +1,14 @@
 import Tasks from "./Tasks";
 
-export default function ViewProject({ project, onDelete }) {
-    
+export default function ViewProject({ project, onDelete, onAddTask, onDeleteTask, tasks }) {
+
     // Format date
     const formattedDate = new Date(project.dueDate).toLocaleDateString("en-Us", {
         year: "numeric",
         month: "short",
         day: "numeric"
-    }); 
-    
+    });
+
     return (
         <div className="w-[35rem] mt16">
             <header className="pb-4 mb-4 border-b-2 border-stone-300">
@@ -19,7 +19,7 @@ export default function ViewProject({ project, onDelete }) {
                 <p className="mb-4 text-stone-400">{formattedDate}</p>
                 <p className="text-stone-600 whitespace-pre-wrap">{project.description}</p>
             </header>
-            <Tasks />
+            <Tasks onAddTask={onAddTask} onDeleteTask={onDeleteTask} tasks={tasks} />
         </div>
     )
 }
