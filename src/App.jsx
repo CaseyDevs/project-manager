@@ -3,6 +3,7 @@ import Sidebar from './components/Sidebar';
 import NewProject from "./components/NewProject.jsx";
 import NoProject from "./components/NoProject.jsx";
 import SelectedProject from "./components/SelectedProject.jsx";
+import Tasks from "./components/Tasks.jsx";
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
         projects: [],  // Array of the created projects
         selectedProjectID: undefined,  // Store selected projects ID
         tasks: [],
+        taskID: undefined,
     });
 
 
@@ -34,7 +36,16 @@ function App() {
     }
 
     // Remove task from project
-    function handleDeleteTask() { }
+    function handleDeleteTask(taskID) {
+        setProjectState(prevState => {
+            return {
+                ...prevState,
+                // Remove the selected task from the projects list
+                tasks: prevState.tasks.filter(
+                    (task) => task.id !== taskID),
+            };
+        });
+    }
 
     function handleSelectedProject(id) {
         // Use prev state to keep track of old projects
