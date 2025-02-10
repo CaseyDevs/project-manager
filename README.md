@@ -56,24 +56,24 @@ A modern React-based project management application that allows users to create,
 
 ## Project Structure
 
-project-manager/
-├── src/
-│ ├── components/
-│ │ ├── Button.jsx
-│ │ ├── ErrorModal.jsx
-│ │ ├── Input.jsx
-│ │ ├── NewProject.jsx
-│ │ ├── NewTask.jsx
-│ │ ├── NoProject.jsx
-│ │ ├── SelectedProject.jsx
-│ │ ├── Sidebar.jsx
-│ │ └── Tasks.jsx
-│ ├── App.jsx
-│ ├── main.jsx
-│ └── index.css
-├── public/
-├── index.html
-└── package.json
+- project-manager/
+- ├── src/
+- │ ├── components/
+- │ │ ├── Button.jsx
+- │ │ ├── ErrorModal.jsx
+- │ │ ├── Input.jsx
+- │ │ ├── NewProject.jsx
+- │ │ ├── NewTask.jsx
+- │ │ ├── NoProject.jsx
+- │ │ ├── SelectedProject.jsx
+- │ │ ├── Sidebar.jsx
+- │ │ └── Tasks.jsx
+- │ ├── App.jsx
+- │ ├── main.jsx
+- │ └── index.css
+- ├── public/
+- ├── index.html
+- └── package.json
 
 ## Acknowledgments
 
