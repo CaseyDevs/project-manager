@@ -1,6 +1,7 @@
 # React Project Manager
 
 A modern React-based project management application that allows users to create, manage, and track projects and their associated tasks.
+
 ** CURRENTLY FRONT-END ONLY **
 
 ## Features
@@ -53,27 +54,6 @@ A modern React-based project management application that allows users to create,
 4. Select projects from the sidebar to view details
 5. Add tasks to your projects
 6. Clear completed tasks as needed
-
-## Project Structure
-
-- project-manager/
-- ├── src/
-- │ ├── components/
-- │ │ ├── Button.jsx
-- │ │ ├── ErrorModal.jsx
-- │ │ ├── Input.jsx
-- │ │ ├── NewProject.jsx
-- │ │ ├── NewTask.jsx
-- │ │ ├── NoProject.jsx
-- │ │ ├── SelectedProject.jsx
-- │ │ ├── Sidebar.jsx
-- │ │ └── Tasks.jsx
-- │ ├── App.jsx
-- │ ├── main.jsx
-- │ └── index.css
-- ├── public/
-- ├── index.html
-- └── package.json
 
 ## Acknowledgments
 
